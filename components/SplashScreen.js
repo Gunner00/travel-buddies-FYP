@@ -16,7 +16,7 @@ export default function SplashScreen() {
         <div className="flex flex-col gap-10 mb-10 justify-center items-center bg-black h-screen w-screen b">
             <UniversalFadeAnimation>
                 <h1 className="font-semibold text-6xl tracking-tight text-white">
-                    Walkify
+                    Travel Buddies
                 </h1>
             </UniversalFadeAnimation>
         </div>

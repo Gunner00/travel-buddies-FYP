@@ -167,7 +167,6 @@ export default function StartTripPage() {
                         height: "100%",
                     }}
                     zoom={16}
-                    // 29.717154, -95.404182 is rice university
                     center={{ lat: 29.717, lng: -95.404 }}
                     options={{
                         streetViewControl: false,
@@ -187,7 +186,7 @@ export default function StartTripPage() {
             <div>
                 <UniversalFadeAnimation>
                     <h1 className="interSubheader absolute top-4 left-4 shadow-2xl bg-black text-white px-3 py-2 rounded-full">
-                        Walkify
+                        Travel Buddies
                     </h1>
                 </UniversalFadeAnimation>
             </div>
@@ -242,7 +241,7 @@ export default function StartTripPage() {
                         >
                             Start Trip Matching
                         </button>
-                        <h1 className="interBody"> - You&apos;ll be matched with another verified female student from your school.</h1>
+                        <h1 className="interBody"> - You&apos;ll be matched with another verified student from your school.</h1>
                         <div className="flex gap-2 items-center justify-end mb-4">
                             <button
                                 className="inline-flex p-4 items-center rounded-full bg-gray-200 text-sm font-medium text-gray-700 shadow-sm hover:opacity-90 focus:outline-none"

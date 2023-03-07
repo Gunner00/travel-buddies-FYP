@@ -12,7 +12,7 @@ export default function CongratulationsPage() {
             </h2>
             <button
                 onClick={() => {
-                    router.push("/startTripPage");
+                    router.push("/startTripPage")
                 }}
                 className="w-[95vw] bg-black text-white text-2xl font-medium px-10 py-4 rounded-xl"
                 disabled={false}

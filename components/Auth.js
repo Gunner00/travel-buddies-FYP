@@ -53,10 +53,10 @@ export default function Auth() {
     const handleLogin = async (email) => {
         try {
             setLoading(true);
-            // If the email is not a Rice email, throw an error
+            // If the email is not a Riphah email, throw an error
             if (!email.endsWith("@riphah.edu.pk")) {
                 // throw new Error("Please use a Rice email");
-                toast("Usually we'd ask for a university email only, but for Hackathon judges, you can try out the app now!")
+                toast("Please enter a Riphah International University email and try again.")
             }
             const { error } = await supabase.auth.signInWithOtp({ email });
             if (error) throw error;
@@ -73,17 +73,17 @@ export default function Auth() {
             <div className="flex flex-col gap-8 justify-center items-center w-screen h-screen bg-white">
             <UniversalFadeAnimation>
                     <h1 className="interSubheader shadow-2xl bg-black text-white px-3 py-2 rounded-full">
-                        Walkify
+                        Travel Buddies
                     </h1>
                 </UniversalFadeAnimation>
-                <img src="/images/authCityWomen.png" className="w-[80vw]" alt="woman in the city"/>
+                <img src="/images/authCityWomen.png" className="w-[40vw]" alt="students"/>
 
-                <h1 className="interSubheader">Safely walk home together.</h1>
+                <h1 className="interSubheader">Let's keep each other safe.</h1>
                 <div className="mt-10 flex flex-col justify-center items-center gap-4">
                     <input
                         className="w-[70vw] rounded-full interBody px-10 py-4"
                         type="email"
-                        placeholder="you@email.com"
+                        placeholder="University Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />

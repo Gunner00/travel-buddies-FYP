@@ -173,14 +173,14 @@ export default function Account({ session }) {
             <UniversalFadeAnimation>
                 <UniversalFadeAnimation>
                     <h1 className="interSubheader fixed top-4 left-4 shadow-2xl bg-black text-white px-3 py-2 rounded-full">
-                        Walkify
+                        Travel Buddies
                     </h1>
                 </UniversalFadeAnimation>
                 <div className="flex flex-col gap-14 pt-20 md:flex-row justify-center items-center p-10 lg:p-20">
                     <section className="flex flex-col justify-center items-center lg:w-1/2">
                         <h1 className="interHeader text-center">
                             {!filledInfo &&
-                                "Welcome to Walkify! Tell us about yourself."}
+                                "Welcome to Travel Buddies! Tell us about yourself."}
                             {filledInfo &&
                                 "You're good to go! Click the button to get started."}
                         </h1>
