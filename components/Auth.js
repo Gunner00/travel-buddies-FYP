@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { supabase } from "../utils/supabaseClient";
 import UniversalFadeAnimation from "./UniversalFadeComponent";
 import { toast } from "react-hot-toast";
+import { Image } from "next";
 export default function Auth() {
     const [isLoading, setIsLoading] = useState(true);
     const [session, setSession] = useState(null);
@@ -76,8 +77,7 @@ export default function Auth() {
                         Travel Buddies
                     </h1>
                 </UniversalFadeAnimation>
-                <img src="/images/authCityWomen.png" className="w-[40vw]" alt="students"/>
-
+                <Image src="/images/authCityWomen.png" className="w-[40vw]" alt="students"/>
                 <h1 className="interSubheader">Let's keep each other safe.</h1>
                 <div className="mt-10 flex flex-col justify-center items-center gap-4">
                     <input
