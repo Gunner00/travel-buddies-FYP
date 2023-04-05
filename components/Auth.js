@@ -55,7 +55,7 @@ export default function Auth() {
         try {
             setLoading(true);
             // If the email is not a Riphah email, throw an error
-            if (!email.endsWith("@riphah.edu.pk")) {
+            if (!email.endsWith("@students.riphah.edu.pk")) {
                 // throw new Error("Please use a Riphah email");
                 toast("Please enter a Riphah International University email and try again.")
             }
