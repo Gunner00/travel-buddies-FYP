@@ -4,6 +4,7 @@ import Avatar from "./Avatar";
 import { useRouter } from "next/router";
 import toast from "react-hot-toast";
 import UniversalFadeAnimation from "./UniversalFadeComponent";
+
 export default function Account({ session }) {
     const [loading, setLoading] = useState(true);
     const [username, setUsername] = useState("");
